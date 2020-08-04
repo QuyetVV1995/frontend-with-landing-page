@@ -1,74 +1,87 @@
 *{
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-.heading{
+html{
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 50px;
 }
 
-textarea{
-    display: block;
+h1, h2{
+    color: purple;
 }
 
-.heading{
-    color: green;
-    /* Sử dụng tên trong của màu sắc */
-
-    color: #0000ff;
-    /* Sử dụng mã màu hexan  */
-
-    color: rgb(0, 255, 0);
-    /* Sử dụng phối màu rgb() red green blue */
-
-    color: rgba(0, 255, 0, 1);
-    /* Tương tự rgb() và thêm 1 thông số là độ mờ */
+h1{
+    font-size: 80px;
+    margin-bottom: 15px;
 }
 
-/* h1{
-    border: 4px solid red;
-    border-style: dotted;
-    padding: 40px;
-    padding: 50px 0;   */
-   /* top-bottom left-right */
-    
-    /* padding: 20px 0 50px 20px; */
-    /* top right bottom left */
-
-    /* margin: 60px;
-} */
-
-.heading{
-    border: 4px solid red;
-    border-style: dotted;
-    background-color: aqua;
+h2{
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-.container{  
+p{
+    margin-bottom: 10px;
+}
+
+.container{
     width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto; /* căn giữa*/
+    background-color: lavender;
+    padding: 0 20px;
 }
 .content{
-    background-color: palegoldenrod;
     width: 75%;
     float: left;
 }
 
-.avatar{
+form{
     width: 25%;
-    background-color: greenyellow;
     float: left;
 }
 
-.info{
-    background-color: aquamarine;
+input, textarea{
+    display: block;
 }
 
+input{
+    margin: 20px;
+    width: 200px;
+    padding: 10px 20px;
+}
+
+textarea{
+    width: 200px;
+    margin-left: 20px;
+    padding: 20px;
+}
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
+}
+
+.avatar_image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+h4{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.info{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.date{
+    position: relative;
+    left: 200px
 }
